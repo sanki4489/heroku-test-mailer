@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        UserMailer.confirmation(@user).deliver
+        UserMailer.confrimation(@user).deliver
         format.html { redirect_to user_url(@user), notice: "User was successfully created." }
         format.json { render :show, status: :created, location: @user }
       else

@@ -11,4 +11,8 @@ class UserMailer < ApplicationMailer
 
     mail to: @user.email, subject: @gretting
   end
+  
+  def new_mail
+    mail to: '17btrio027@jainuniversity.ac.in'
+  end
 end
